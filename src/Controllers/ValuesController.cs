@@ -8,18 +8,11 @@ namespace LokiGrafanaDemo.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        private Logger log;
-        public ValuesController()
-        {
-            log = new LoggerConfiguration()
-                .WriteTo.Console()
-                .CreateLogger();
-        }
         // GET: api/<ValuesController>
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            log.Information("Hello, Serilog!");
+            Log.Information("Hello, Serilog!");
             return new string[] { "value1", "value2" };
         }
 
