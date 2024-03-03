@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Serilog;
-using Serilog.Core;
 
 namespace LokiGrafanaDemo.Controllers
 {
